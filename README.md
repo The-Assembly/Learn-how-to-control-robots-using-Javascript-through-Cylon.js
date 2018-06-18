@@ -3,10 +3,12 @@
 **Aim:** Controlling Servo Motors connected to Arduino using CylonJS
 
 **Commands to execute**
-
+```
 npm install cylon
-
+```
+```
 npm install cylon cylon-keyboard
+```
 
 CylonJS is a JavaScript library that allows you to abstract sensors and actuators and many other low-level hardware functions, mainly targeted towards robotics.
 
