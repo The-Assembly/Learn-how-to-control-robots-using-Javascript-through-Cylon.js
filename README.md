@@ -53,6 +53,9 @@ The servo circuitry is built right inside the motor unit and has a positionable 
 
 - Select File &gt; Examples &gt; Firmata &gt; StandardFirmata
 - Now compile and upload this to Arduino
+![cylonjs arduino select](https://user-images.githubusercontent.com/5766232/41531651-18c67d46-7305-11e8-9d4b-f51641a38450.png)
+
+**Connections to servo Motor**
 
 ![serv_connections](https://user-images.githubusercontent.com/32713072/41531406-48227190-7304-11e8-9f69-a150eaefafe2.jpg)
 
