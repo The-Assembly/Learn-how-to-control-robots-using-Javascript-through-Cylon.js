@@ -33,12 +33,15 @@ It&#39;s a JavaScript library that allows you to abstract sensors and actuators 
 - Visual Stduio Code
 
 **Terminal Commands**
-
+```
 // Installing CylonJS library with I2C drivers
 $ npm install cylon
 $ npm install cylon-firmata cylon-gpio cylon-i2c
+```
+```
 // To use Cylon.js with the keyboard
 $npm install cylon cylon-keyboard
+```
 
 **Servo Motor**
 
