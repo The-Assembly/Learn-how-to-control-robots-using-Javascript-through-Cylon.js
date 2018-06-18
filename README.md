@@ -53,7 +53,7 @@ The servo circuitry is built right inside the motor unit and has a positionable 
 **Code:**
 
 **Defining Devices**
-
+```
 _connections: {
         arduino: { adaptor: &#39;firmata&#39;, port: &#39;COM3&#39; },
     keyboard: { adaptor: &#39;keyboard&#39; }
@@ -63,12 +63,15 @@ devices: {
    servo1: { driver: &#39;servo&#39;, pin: 3, connection: &quot;arduino&quot; },
     keyboard: { driver: &#39;keyboard&#39;, connection: &quot;keyboard&quot; }
 },_
+```
 
 **Rotating servo on keyboard Commands**
 
+```
 _work: function(my) {
-        var angle1 = 0 ;    my.servo1.angle(angle1);
-    my.keyboard.on(&quot;a&quot;, function() {
+        var angle1 = 0 ;   
+        my.servo1.angle(angle1);
+        my.keyboard.on(&quot;a&quot;, function() {
 
           if (angle1 == 0){
                 angle1 = 180;
@@ -79,6 +82,7 @@ _work: function(my) {
               }
  });
 }_
+```
 
 **Github**
 
