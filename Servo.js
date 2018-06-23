@@ -12,19 +12,13 @@ Cylon.robot({
 
   work: function(my) {
     var angle = 0 ;
-	my.servo.angle(angle);
-
-		while(1){
-			console.log('Inside the While Loop');
-			if (angle == 0){
-				console.log('Inside the if cond1');
-				angle = 180;
-				my.servo.angle(angle);			
-			} else if (angle ==180) {
-				console.log('Inside the if cond2');
-				angle = 0;
-				my.servo.angle(angle);	
-			}		
-		}
+    my.servo.angle(angle);
+    every910.second(),function() {
+	    angle = angle + 180;
+	    if(angle > 180){
+		    angle = 0
+	    }
+	    my.servo.angle(angle);	
+	});		
     }
 }).start();
