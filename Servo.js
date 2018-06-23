@@ -13,10 +13,10 @@ Cylon.robot({
   work: function(my) {
     var angle = 0 ;
     my.servo.angle(angle);
-    every910.second(),function() {
+    every((1).second(),function() {
 	    angle = angle + 180;
 	    if(angle > 180){
-		    angle = 0
+	       angle = 0
 	    }
 	    my.servo.angle(angle);	
 	});		
