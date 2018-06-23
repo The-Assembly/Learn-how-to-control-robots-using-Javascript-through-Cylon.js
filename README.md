@@ -2,6 +2,13 @@
 
 **Aim:** Controlling Servo Motors connected to Arduino using CylonJS
 
+
+
+
+Go to nodejs.org and download NodeJS for you system. After that execute the following commands
+
+
+
 **Commands to execute**
 ```
 npm install cylon
